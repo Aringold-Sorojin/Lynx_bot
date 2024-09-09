@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon --max-old-space-size=8192 -q dist/index.js\""
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.5",
+    "@types/node": "^20.11.30",
+    "concurrently": "^8.2.1",
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.29.0",
+    "@grammyjs/conversations": "^1.2.0",
+    "@solana/spl-token": "^0.4.3",
+    "@solana/web3.js": "^1.91.3",
+    "bs58": "^5.0.0",
+    "grammy": "^1.21.1",
+    "mongoose": "^8.2.4"
+  }
+}
